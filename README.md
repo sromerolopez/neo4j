@@ -20,3 +20,18 @@ MATCH (origin:Python {id: row.src})
 MATCH (destination:Python {id: row.dst})
 MERGE (origin)-[:RELATIONSHIP {relationship: row.relationship}]->(destination)
 ```
+
+### 3. Visualizamos lo cargado
+
+```console
+MATCH (origin) RETURN (origin)
+```
+
+### 4. Creamos el grafo
+
+```console
+CALL gds.graph.create(
+'myGraph','Python',
+{RELATIONSHIP: {
+orientation: 'REVERSE'}})
+```
