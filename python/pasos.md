@@ -12,7 +12,7 @@ MERGE (python:Python {id:row.id})
 ### 1. Cargamos los nodos (MI CSV):
 
 ```console
-WITH "https://raw.githubusercontent.com/sromerolopez/neo4j/main/python/aristas.csv" AS uri
+WITH "https://raw.githubusercontent.com/sromerolopez/neo4j/main/python/nodos.csv" AS uri
 LOAD CSV WITH HEADERS FROM uri AS row
 MERGE (python:Python {id:row.id})
 ```
