@@ -3,7 +3,7 @@
 ### 1. Cargamos los nodos:
 
 ```console
-WITH "https://github.com/neo4j-graph-analytics/book/raw/master/data/transport-nodes.csv" AS uri
+WITH "https://raw.githubusercontent.com/sromerolopez/neo4j/main/ciudades/nodos.csv" AS uri
 LOAD CSV WITH HEADERS FROM uri AS row
 MERGE (place:Place {id:row.id})
 SET place.latitude = toFloat(row.latitude),
@@ -15,7 +15,7 @@ place.population = toInteger(row.population)
 ### 2. Cargamos las aristas:
 
 ```console
-WITH "https://github.com/neo4j-graph-analytics/book/raw/master/data/transport-relationships.csv" AS uri
+WITH "https://raw.githubusercontent.com/sromerolopez/neo4j/main/ciudades/aristas.csv" AS uri
 LOAD CSV WITH HEADERS FROM uri AS row
 MATCH (origin:Place {id: row.src})
 MATCH (destination:Place {id: row.dst})
