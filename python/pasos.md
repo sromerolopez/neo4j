@@ -1,7 +1,9 @@
 
-## BBDD Python
+# BBDD Python
 
-### 1. Cargamos los nodos:
+## 1. Carga básica del grafo
+
+### 1.1 Cargamos los nodos:
 
 ```console
 WITH "https://raw.githubusercontent.com/sromerolopez/neo4j/main/python/nodos.csv" AS uri
@@ -9,7 +11,7 @@ LOAD CSV WITH HEADERS FROM uri AS row
 MERGE (python:Python {id:row.id})
 ```
 
-### 2. Cargamos las aristas:
+### 1.2 Cargamos las aristas:
 
 ```console
 WITH "https://raw.githubusercontent.com/sromerolopez/neo4j/main/python/aristas.csv" AS uri
@@ -19,13 +21,13 @@ MATCH (destination:Python {id: row.dst})
 MERGE (origin)-[:RELATIONSHIP {relationship: row.relationship}]->(destination)
 ```
 
-### 3. Visualizamos lo cargado
+### 1.3 Visualizamos lo cargado
 
 ```console
 MATCH (origin) RETURN (origin)
 ```
 
-### 4. Creamos el grafo
+### 1.4 Creamos el grafo
 
 ```console
 CALL gds.graph.create(
@@ -34,7 +36,10 @@ CALL gds.graph.create(
 orientation: 'REVERSE'}})
 ```
 
-### 5. Algoritmo básico de centralidad
+## 2. Algoritmos Medidas de Centralidad
+
+### 2.1 Algoritmo básico de centralidad
+
 ```console
 CALL gds.degree.stream('myGraph')
 YIELD nodeId, score
@@ -42,7 +47,7 @@ RETURN gds.util.asNode(nodeId).id AS id, score AS RELATIONSHIP
 ORDER BY RELATIONSHIP DESC, id DESC
 ```
 
-### 6. Algoritmo de cercanía (centralidad)
+### 2.2 Algoritmo de cercanía (centralidad)
 ```console
 CALL gds.alpha.closeness.stream({
 nodeProjection: 'Python',
@@ -53,11 +58,15 @@ RETURN gds.util.asNode(nodeId).id AS Python, centrality
 ORDER BY centrality DESC
 ```
 
-### 7. Algoritmo de intermediación (centralidad)
+### 2.3 Algoritmo de intermediación (centralidad)
 ```console
 CALL gds.betweenness.stream('myGraph')
 YIELD nodeId, score
 RETURN gds.util.asNode(nodeId).id AS id, score
 ORDER BY score DESC
 ```
+
+## 3. Algoritmos de Comunidades
+
+
 
