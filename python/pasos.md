@@ -52,3 +52,12 @@ YIELD nodeId, centrality
 RETURN gds.util.asNode(nodeId).id AS Python, centrality
 ORDER BY centrality DESC
 ```
+
+### 7. Algoritmo de intermediación (centralidad)
+```console
+CALL gds.betweenness.stream('myGraph')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).id AS id, score
+ORDER BY score DESC
+```
+
