@@ -35,7 +35,7 @@ MATCH (origin) RETURN (origin)
 
 ```console
 CALL gds.graph.create(
-  'transportGraph', // El nombre del grafo en GDS
+  'myGraph', // El nombre del grafo en GDS
   'Place',          // Tipo de nodo, como en tu CSV de nodos
   {
     EROAD: {        // Tipo de relación, como en tu CSV de relaciones
