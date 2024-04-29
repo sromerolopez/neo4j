@@ -68,5 +68,18 @@ ORDER BY score DESC
 
 ## 3. Algoritmos de Comunidades
 
+### 3.1 Creamos el grafo para estos algoritmos
+```console
+CALL gds.graph.create(
+'myGraph2',
+'Python',
+{
+RELATIONSHIP: {
+orientation: 'UNDIRECTED'
+}
+}
+)
+```
+
 
 
