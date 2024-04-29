@@ -33,3 +33,11 @@ CALL gds.graph.create(
 {RELATIONSHIP: {
 orientation: 'REVERSE'}})
 ```
+
+### 5. Algoritmo básico de centralidad
+```console
+CALL gds.degree.stream('myGraph')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).id AS id, score AS RELATIONSHIP
+ORDER BY RELATIONSHIP DESC, id DESC
+```
