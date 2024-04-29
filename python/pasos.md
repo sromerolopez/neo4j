@@ -92,6 +92,8 @@ ORDER BY triangleCount DESC
 ```
 
 ### 3.3 Coeficiente local de clustering
+Análisis del coeficiente local de clustering nos permite ver que la librería con mayor puntuación y por tanto que agrupa a más librerías en torno a ella es “ipykernel”, tiene un coeficiente de 1 que es el mayor coeficiente local de clustering.
+
 ```console
 CALL gds.localClusteringCoefficient.stream('myGraph2')
 YIELD nodeId, localClusteringCoefficient
