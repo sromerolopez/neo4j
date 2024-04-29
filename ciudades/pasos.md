@@ -54,6 +54,8 @@ CALL gds.graph.create(
 
 ### 2.1 Algoritmo de Dijkstra
 
+Ejemplo 1 Doncaster-Utrecht
+
 ```console
 MATCH (source:Place{id:'Doncaster'})
 CALL gds.allShortestPaths.dijkstra.stream('myGraph', {
@@ -71,5 +73,23 @@ RETURN
     nodes(path) as path
 ORDER BY index
 ```
+Ejemplo 2 Felixstowe-Utrecht
 
+```console
+MATCH (source:Place{id:'Felixstowe'})
+CALL gds.allShortestPaths.dijkstra.stream('myGraph', {
+    sourceNode: source,
+    relationshipWeightProperty: 'distance'
+})
+YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+RETURN
+    index,
+    gds.util.asNode(sourceNode).id AS sourceNodeName,
+    gds.util.asNode(targetNode).id AS targetNodeName,
+    totalCost,
+    [nodeId IN nodeIds | gds.util.asNode(nodeId).id] AS nodeNames,
+    costs,
+    nodes(path) as path
+ORDER BY index ASC
+```
 
