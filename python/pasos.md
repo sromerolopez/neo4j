@@ -91,5 +91,13 @@ AS id, triangleCount
 ORDER BY triangleCount DESC
 ```
 
+### 3.3 Coeficiente local de clustering
+```console
+CALL gds.localClusteringCoefficient.stream('myGraph2')
+YIELD nodeId, localClusteringCoefficient
+RETURN gds.util.asNode(nodeId).id
+AS id, localClusteringCoefficient
+ORDER BY localClusteringCoefficient DESC
+```
 
 
