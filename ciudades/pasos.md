@@ -93,3 +93,25 @@ RETURN
 ORDER BY index ASC
 ```
 
+### 2.2 Algoritmo A*
+```console
+MATCH (source:Place{id:'Felixstowe'}), (target:Place{id:'Utrecht'})
+CALL gds.shortestPath.astar.stream('myGraph', {
+sourceNode:source,
+targetNode:target,
+latitudeProperty:'latitude',
+longitudeProperty:'longitude',
+relationshipWeightProperty: 'distance'
+})
+YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+RETURN
+index,
+gds.util.asNode(sourceNode).id AS sourceNodeName,
+gds.util.asNode(targetNode).id AS targetNodeName,
+totalCost,
+[nodeId IN nodeIds | gds.util.asNode(nodeId).id] AS nodeNames,
+costs,
+nodes(path) as path
+ORDER BY index
+```
+
