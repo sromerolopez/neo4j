@@ -41,3 +41,14 @@ YIELD nodeId, score
 RETURN gds.util.asNode(nodeId).id AS id, score AS RELATIONSHIP
 ORDER BY RELATIONSHIP DESC, id DESC
 ```
+
+### 6. Algoritmo de cercanía (centralidad)
+```console
+CALL gds.alpha.closeness.stream({
+nodeProjection: 'Python',
+relationshipProjection: 'RELATIONSHIP'
+})
+YIELD nodeId, centrality
+RETURN gds.util.asNode(nodeId).id AS Python, centrality
+ORDER BY centrality DESC
+```
