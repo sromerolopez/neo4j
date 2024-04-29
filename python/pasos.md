@@ -100,4 +100,13 @@ AS id, localClusteringCoefficient
 ORDER BY localClusteringCoefficient DESC
 ```
 
-
+### 3.4 Componentes fuertemente conexas
+```console
+CALL gds.alpha.scc.stream({
+nodeProjection: 'Python',
+relationshipProjection: 'RELATIONSHIP'
+})
+YIELD nodeId, componentId
+RETURN gds.util.asNode(nodeId).id AS id, componentId AS Component
+ORDER BY Component DESC
+```
