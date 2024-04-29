@@ -125,6 +125,7 @@ MATCH (y:Place{id:'Utrecht'})
 RETURN gds.alpha.linkprediction.commonNeighbors(x,y) AS score
 ```
 
+### 3.2 Adhesión Preferencial
 ```console
 MATCH (x:Place{id:'Den Haag'})
 MATCH (y:Place{id:'Utrecht'})
