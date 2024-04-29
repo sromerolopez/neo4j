@@ -132,3 +132,9 @@ MATCH (y:Place{id:'Utrecht'})
 RETURN gds.alpha.linkprediction.preferentialAttachment(x, y) AS score
 ```
 
+### 3.3 Asignación de Recursos
+```console
+MATCH (x:Place{id:'Den Haag'})
+MATCH (y:Place{id:'Utrecht'})
+RETURN gds.alpha.linkprediction.resourceAllocation(x, y) AS score
+```
