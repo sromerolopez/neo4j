@@ -94,6 +94,7 @@ ORDER BY index ASC
 ```
 
 ### 2.2 Algoritmo A*
+Ejemplo Felixstowe-Utrecht
 ```console
 MATCH (source:Place{id:'Felixstowe'}), (target:Place{id:'Utrecht'})
 CALL gds.shortestPath.astar.stream('myGraph', {
