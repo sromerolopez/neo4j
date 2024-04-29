@@ -101,6 +101,8 @@ ORDER BY localClusteringCoefficient DESC
 ```
 
 ### 3.4 Componentes fuertemente conexas
+Análisis de componentes fuertemente conexas, que analiza cuando un nodo puede ser alcanzado por cualquier otro nodo en ambas direcciones y por tanto nos permite estudiar la conectividad de la red.
+
 ```console
 CALL gds.alpha.scc.stream({
 nodeProjection: 'Python',
