@@ -116,10 +116,18 @@ nodes(path) as path
 ORDER BY index
 ```
 
-### 3.1 Predicción de enlaces
+## 3 Predicción de enlaces
 
+### 3.1 Vecinos Comunes
 ```console
 MATCH (x:Place{id:'Den Haag'})
 MATCH (y:Place{id:'Utrecht'})
 RETURN gds.alpha.linkprediction.commonNeighbors(x,y) AS score
 ```
+
+```console
+MATCH (x:Place{id:'Den Haag'})
+MATCH (y:Place{id:'Utrecht'})
+RETURN gds.alpha.linkprediction.preferentialAttachment(x, y) AS score
+```
+
