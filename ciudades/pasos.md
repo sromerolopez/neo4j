@@ -1,6 +1,9 @@
-## BBDD Ciudades
+# BBDD Ciudades
 
-### 1. Cargamos los nodos:
+
+## 1. Carga básica del grafo
+
+### 1.1 Cargamos los nodos:
 
 ```console
 WITH "https://raw.githubusercontent.com/sromerolopez/neo4j/main/ciudades/nodos.csv" AS uri
@@ -12,7 +15,7 @@ place.population = toInteger(row.population)
 
 ```
 
-### 2. Cargamos las aristas:
+### 1.2 Cargamos las aristas:
 
 ```console
 WITH "https://raw.githubusercontent.com/sromerolopez/neo4j/main/ciudades/aristas.csv" AS uri
@@ -22,13 +25,13 @@ MATCH (destination:Place {id: row.dst})
 MERGE (origin)-[:EROAD {distance: toInteger(row.cost)}]->(destination)
 ```
 
-### 3. Visualizamos lo cargado
+### 1.3 Visualizamos lo cargado
 
 ```console
 MATCH (origin) RETURN (origin)
 ```
 
-### 4. Creamos el grafo
+### 1.4 Creamos el grafo
 
 ```console
 CALL gds.graph.create(
@@ -45,5 +48,7 @@ CALL gds.graph.create(
     nodeProperties: ['latitude', 'longitude', 'population'] // Propiedades del nodo que quieres incluir
   }
 )
+
+## 2. Carga básica del grafo
 
 ```
