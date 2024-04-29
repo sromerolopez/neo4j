@@ -56,7 +56,6 @@ CALL gds.graph.create(
 
 ```console
 MATCH (source:Place{id:'Doncaster'})
-MATCH (targetNode:Place{id: 'London'})
 CALL gds.allShortestPaths.dijkstra.stream('myGraph', {
     sourceNode: source,
     relationshipWeightProperty: 'distance'
