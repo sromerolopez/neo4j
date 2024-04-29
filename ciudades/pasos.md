@@ -48,7 +48,29 @@ CALL gds.graph.create(
     nodeProperties: ['latitude', 'longitude', 'population'] // Propiedades del nodo que quieres incluir
   }
 )
-
-## 2. Carga básica del grafo
-
 ```
+
+## 2. Cálculo de Cáminos Mínimos
+
+### 2.1 Algoritmo de Dijkstra
+
+```console
+MATCH (source:Place{id:'Doncaster'})
+MATCH (targetNode:Place{id: 'London'})
+CALL gds.allShortestPaths.dijkstra.stream('myGraph', {
+    sourceNode: source,
+    relationshipWeightProperty: 'distance'
+})
+YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+RETURN
+    index,
+    gds.util.asNode(sourceNode).id AS sourceNodeName,
+    gds.util.asNode(targetNode).id AS targetNodeName,
+    totalCost,
+    [nodeId IN nodeIds | gds.util.asNode(nodeId).id] AS nodeNames,
+    costs,
+    nodes(path) as path
+ORDER BY index
+```
+
+
