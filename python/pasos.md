@@ -27,7 +27,10 @@ MERGE (origin)-[:RELATIONSHIP {relationship: row.relationship}]->(destination)
 MATCH (origin) RETURN (origin)
 ```
 
-### 1.4 Creamos el grafo
+
+## 2. Algoritmos Medidas de Centralidad
+
+### 2.1 Creamos el grafo para aplicar estos algoritmos
 
 ```console
 CALL gds.graph.create(
@@ -36,9 +39,7 @@ CALL gds.graph.create(
 orientation: 'REVERSE'}})
 ```
 
-## 2. Algoritmos Medidas de Centralidad
-
-### 2.1 Algoritmo básico de centralidad
+### 2.2 Algoritmo básico de centralidad
 
 ```console
 CALL gds.degree.stream('myGraph')
@@ -47,7 +48,7 @@ RETURN gds.util.asNode(nodeId).id AS id, score AS RELATIONSHIP
 ORDER BY RELATIONSHIP DESC, id DESC
 ```
 
-### 2.2 Algoritmo de cercanía (centralidad)
+### 2.3 Algoritmo de cercanía (centralidad)
 ```console
 CALL gds.alpha.closeness.stream({
 nodeProjection: 'Python',
@@ -58,7 +59,7 @@ RETURN gds.util.asNode(nodeId).id AS Python, centrality
 ORDER BY centrality DESC
 ```
 
-### 2.3 Algoritmo de intermediación (centralidad)
+### 2.4 Algoritmo de intermediación (centralidad)
 ```console
 CALL gds.betweenness.stream('myGraph')
 YIELD nodeId, score
@@ -79,6 +80,15 @@ orientation: 'UNDIRECTED'
 }
 }
 )
+```
+
+### 3.2 Conteo de Triángulos
+```console
+CALL gds.triangleCount.stream('myGraph2')
+YIELD nodeId, triangleCount
+RETURN gds.util.asNode(nodeId).id
+AS id, triangleCount
+ORDER BY triangleCount DESC
 ```
 
 
