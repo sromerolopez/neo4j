@@ -1,0 +1,301 @@
+src,dst,relationship,cost
+Madrid,Barcelona,EROAD,657
+Madrid,Valencia,EROAD,393
+Madrid,Sevilla,EROAD,507
+Madrid,Zaragoza,EROAD,355
+Madrid,Málaga,EROAD,540
+Madrid,Murcia,EROAD,454
+Madrid,Palma,EROAD,714
+Madrid,Las Palmas de Gran Canaria,EROAD,2259
+Madrid,Bilbao,EROAD,420
+Madrid,Alicante,EROAD,467
+Madrid,Córdoba,EROAD,385
+Madrid,Valladolid,EROAD,210
+Madrid,Vigo,EROAD,605
+Madrid,Gijón,EROAD,497
+Madrid,Hospitalet de Llobregat,EROAD,651
+Madrid,Vitoria-Gasteiz,EROAD,368
+Madrid,La Coruña,EROAD,662
+Madrid,Granada,EROAD,468
+Madrid,Elche,EROAD,456
+Madrid,Oviedo,EROAD,484
+Madrid,Santa Cruz de Tenerife,EROAD,2281
+Madrid,Pamplona,EROAD,412
+Madrid,Almería,EROAD,535
+Madrid,Albacete,EROAD,290
+Barcelona,Valencia,EROAD,394
+Barcelona,Sevilla,EROAD,1078
+Barcelona,Zaragoza,EROAD,334
+Barcelona,Málaga,EROAD,1001
+Barcelona,Murcia,EROAD,613
+Barcelona,Palma,EROAD,268
+Barcelona,Las Palmas de Gran Canaria,EROAD,2827
+Barcelona,Bilbao,EROAD,610
+Barcelona,Alicante,EROAD,529
+Barcelona,Córdoba,EROAD,924
+Barcelona,Valladolid,EROAD,747
+Barcelona,Vigo,EROAD,1179
+Barcelona,Gijón,EROAD,891
+Barcelona,Hospitalet de Llobregat,EROAD,7
+Barcelona,Vitoria-Gasteiz,EROAD,561
+Barcelona,La Coruña,EROAD,1165
+Barcelona,Granada,EROAD,887
+Barcelona,Elche,EROAD,553
+Barcelona,Oviedo,EROAD,902
+Barcelona,Santa Cruz de Tenerife,EROAD,2863
+Barcelona,Pamplona,EROAD,459
+Barcelona,Almería,EROAD,838
+Barcelona,Albacete,EROAD,564
+Valencia,Sevilla,EROAD,703
+Valencia,Zaragoza,EROAD,320
+Valencia,Málaga,EROAD,608
+Valencia,Murcia,EROAD,230
+Valencia,Palma,EROAD,338
+Valencia,Las Palmas de Gran Canaria,EROAD,2436
+Valencia,Bilbao,EROAD,614
+Valencia,Alicante,EROAD,163
+Valencia,Córdoba,EROAD,547
+Valencia,Valladolid,EROAD,572
+Valencia,Vigo,EROAD,996
+Valencia,Gijón,EROAD,820
+Valencia,Hospitalet de Llobregat,EROAD,388
+Valencia,Vitoria-Gasteiz,EROAD,548
+Valencia,La Coruña,EROAD,1036
+Valencia,Granada,EROAD,493
+Valencia,Elche,EROAD,178
+Valencia,Oviedo,EROAD,817
+Valencia,Santa Cruz de Tenerife,EROAD,2474
+Valencia,Pamplona,EROAD,503
+Valencia,Almería,EROAD,448
+Valencia,Albacete,EROAD,180
+Sevilla,Zaragoza,EROAD,838
+Sevilla,Málaga,EROAD,205
+Sevilla,Murcia,EROAD,562
+Sevilla,Palma,EROAD,1026
+Sevilla,Las Palmas de Gran Canaria,EROAD,1763
+Sevilla,Bilbao,EROAD,913
+Sevilla,Alicante,EROAD,642
+Sevilla,Córdoba,EROAD,156
+Sevilla,Valladolid,EROAD,632
+Sevilla,Vigo,EROAD,764
+Sevilla,Gijón,EROAD,889
+Sevilla,Hospitalet de Llobregat,EROAD,1072
+Sevilla,Vitoria-Gasteiz,EROAD,869
+Sevilla,La Coruña,EROAD,904
+Sevilla,Granada,EROAD,276
+Sevilla,Elche,EROAD,615
+Sevilla,Oviedo,EROAD,863
+Sevilla,Santa Cruz de Tenerife,EROAD,1791
+Sevilla,Pamplona,EROAD,919
+Sevilla,Almería,EROAD,413
+Sevilla,Albacete,EROAD,523
+Zaragoza,Málaga,EROAD,815
+Zaragoza,Murcia,EROAD,529
+Zaragoza,Palma,EROAD,491
+Zaragoza,Las Palmas de Gran Canaria,EROAD,2600
+Zaragoza,Bilbao,EROAD,319
+Zaragoza,Alicante,EROAD,479
+Zaragoza,Córdoba,EROAD,694
+Zaragoza,Valladolid,EROAD,414
+Zaragoza,Vigo,EROAD,846
+Zaragoza,Gijón,EROAD,576
+Zaragoza,Hospitalet de Llobregat,EROAD,328
+Zaragoza,Vitoria-Gasteiz,EROAD,258
+Zaragoza,La Coruña,EROAD,839
+Zaragoza,Granada,EROAD,714
+Zaragoza,Elche,EROAD,489
+Zaragoza,Oviedo,EROAD,583
+Zaragoza,Santa Cruz de Tenerife,EROAD,2626
+Zaragoza,Pamplona,EROAD,187
+Zaragoza,Almería,EROAD,717
+Zaragoza,Albacete,EROAD,398
+Málaga,Murcia,EROAD,420
+Málaga,Palma,EROAD,903
+Málaga,Las Palmas de Gran Canaria,EROAD,1828
+Málaga,Bilbao,EROAD,960
+Málaga,Alicante,EROAD,508
+Málaga,Córdoba,EROAD,174
+Málaga,Valladolid,EROAD,714
+Málaga,Vigo,EROAD,931
+Málaga,Gijón,EROAD,994
+Málaga,Hospitalet de Llobregat,EROAD,994
+Málaga,Vitoria-Gasteiz,EROAD,906
+Málaga,La Coruña,EROAD,1056
+Málaga,Granada,EROAD,116
+Málaga,Elche,EROAD,481
+Málaga,Oviedo,EROAD,972
+Málaga,Santa Cruz de Tenerife,EROAD,1868
+Málaga,Pamplona,EROAD,933
+Málaga,Almería,EROAD,227
+Málaga,Albacete,EROAD,440
+Murcia,Palma,EROAD,483
+Murcia,Las Palmas de Gran Canaria,EROAD,2240
+Murcia,Bilbao,EROAD,787
+Murcia,Alicante,EROAD,89
+Murcia,Córdoba,EROAD,416
+Murcia,Valladolid,EROAD,663
+Murcia,Vigo,EROAD,1039
+Murcia,Gijón,EROAD,942
+Murcia,Hospitalet de Llobregat,EROAD,607
+Murcia,Vitoria-Gasteiz,EROAD,722
+Murcia,La Coruña,EROAD,1113
+Murcia,Granada,EROAD,306
+Murcia,Elche,EROAD,62
+Murcia,Oviedo,EROAD,932
+Murcia,Santa Cruz de Tenerife,EROAD,2284
+Murcia,Pamplona,EROAD,699
+Murcia,Almería,EROAD,227
+Murcia,Albacete,EROAD,167
+Palma,Las Palmas de Gran Canaria,EROAD,2721
+Palma,Bilbao,EROAD,807
+Palma,Alicante,EROAD,395
+Palma,Córdoba,EROAD,872
+Palma,Valladolid,EROAD,863
+Palma,Vigo,EROAD,1300
+Palma,Gijón,EROAD,1065
+Palma,Hospitalet de Llobregat,EROAD,266
+Palma,Vitoria-Gasteiz,EROAD,748
+Palma,La Coruña,EROAD,1316
+Palma,Granada,EROAD,788
+Palma,Elche,EROAD,422
+Palma,Oviedo,EROAD,1070
+Palma,Santa Cruz de Tenerife,EROAD,2767
+Palma,Pamplona,EROAD,662
+Palma,Almería,EROAD,702
+Palma,Albacete,EROAD,511
+Las Palmas de Gran Canaria,Bilbao,EROAD,2628
+Las Palmas de Gran Canaria,Alicante,EROAD,2329
+Las Palmas de Gran Canaria,Córdoba,EROAD,1911
+Las Palmas de Gran Canaria,Valladolid,EROAD,2328
+Las Palmas de Gran Canaria,Vigo,EROAD,2188
+Las Palmas de Gran Canaria,Gijón,EROAD,2500
+Las Palmas de Gran Canaria,Hospitalet de Llobregat,EROAD,2820
+Las Palmas de Gran Canaria,Vitoria-Gasteiz,EROAD,2598
+Las Palmas de Gran Canaria,La Coruña,EROAD,2350
+Las Palmas de Gran Canaria,Granada,EROAD,1943
+Las Palmas de Gran Canaria,Elche,EROAD,2302
+Las Palmas de Gran Canaria,Oviedo,EROAD,2469
+Las Palmas de Gran Canaria,Santa Cruz de Tenerife,EROAD,115
+Las Palmas de Gran Canaria,Pamplona,EROAD,2665
+Las Palmas de Gran Canaria,Almería,EROAD,2019
+Las Palmas de Gran Canaria,Albacete,EROAD,2263
+Bilbao,Alicante,EROAD,759
+Bilbao,Córdoba,EROAD,803
+Bilbao,Valladolid,EROAD,301
+Bilbao,Vigo,EROAD,632
+Bilbao,Gijón,EROAD,289
+Bilbao,Hospitalet de Llobregat,EROAD,605
+Bilbao,Vitoria-Gasteiz,EROAD,66
+Bilbao,La Coruña,EROAD,576
+Bilbao,Granada,EROAD,883
+Bilbao,Elche,EROAD,762
+Bilbao,Oviedo,EROAD,306
+Bilbao,Santa Cruz de Tenerife,EROAD,2640
+Bilbao,Pamplona,EROAD,151
+Bilbao,Almería,EROAD,930
+Bilbao,Albacete,EROAD,628
+Alicante,Córdoba,EROAD,492
+Alicante,Valladolid,EROAD,669
+Alicante,Vigo,EROAD,1067
+Alicante,Gijón,EROAD,938
+Alicante,Hospitalet de Llobregat,EROAD,524
+Alicante,Vitoria-Gasteiz,EROAD,693
+Alicante,La Coruña,EROAD,1129
+Alicante,Granada,EROAD,393
+Alicante,Elche,EROAD,27
+Alicante,Oviedo,EROAD,931
+Alicante,Santa Cruz de Tenerife,EROAD,2373
+Alicante,Pamplona,EROAD,658
+Alicante,Almería,EROAD,314
+Alicante,Albacete,EROAD,181
+Córdoba,Valladolid,EROAD,544
+Córdoba,Vigo,EROAD,765
+Córdoba,Gijón,EROAD,822
+Córdoba,Hospitalet de Llobregat,EROAD,917
+Córdoba,Vitoria-Gasteiz,EROAD,753
+Córdoba,La Coruña,EROAD,886
+Córdoba,Granada,EROAD,170
+Córdoba,Elche,EROAD,466
+Córdoba,Oviedo,EROAD,800
+Córdoba,Santa Cruz de Tenerife,EROAD,1942
+Córdoba,Pamplona,EROAD,791
+Córdoba,Almería,EROAD,306
+Córdoba,Albacete,EROAD,367
+Valladolid,Vigo,EROAD,438
+Valladolid,Gijón,EROAD,289
+Valladolid,Hospitalet de Llobregat,EROAD,741
+Valladolid,Vitoria-Gasteiz,EROAD,279
+Valladolid,La Coruña,EROAD,464
+Valladolid,Granada,EROAD,659
+Valladolid,Elche,EROAD,661
+Valladolid,Oviedo,EROAD,274
+Valladolid,Santa Cruz de Tenerife,EROAD,2339
+Valladolid,Pamplona,EROAD,370
+Valladolid,Almería,EROAD,740
+Valladolid,Albacete,EROAD,497
+Vigo,Gijón,EROAD,374
+Vigo,Hospitalet de Llobregat,EROAD,1174
+Vigo,Vitoria-Gasteiz,EROAD,650
+Vigo,La Coruña,EROAD,165
+Vigo,Granada,EROAD,927
+Vigo,Elche,EROAD,1053
+Vigo,Oviedo,EROAD,345
+Vigo,Santa Cruz de Tenerife,EROAD,2178
+Vigo,Pamplona,EROAD,758
+Vigo,Almería,EROAD,1046
+Vigo,Albacete,EROAD,887
+Gijón,Hospitalet de Llobregat,EROAD,886
+Gijón,Vitoria-Gasteiz,EROAD,330
+Gijón,La Coruña,EROAD,290
+Gijón,Granada,EROAD,946
+Gijón,Elche,EROAD,933
+Gijón,Oviedo,EROAD,31
+Gijón,Santa Cruz de Tenerife,EROAD,2501
+Gijón,Pamplona,EROAD,436
+Gijón,Almería,EROAD,1029
+Gijón,Albacete,EROAD,775
+Hospitalet de Llobregat,Vitoria-Gasteiz,EROAD,556
+Hospitalet de Llobregat,La Coruña,EROAD,1160
+Hospitalet de Llobregat,Granada,EROAD,880
+Hospitalet de Llobregat,Elche,EROAD,547
+Hospitalet de Llobregat,Oviedo,EROAD,897
+Hospitalet de Llobregat,Santa Cruz de Tenerife,EROAD,2856
+Hospitalet de Llobregat,Pamplona,EROAD,454
+Hospitalet de Llobregat,Almería,EROAD,832
+Hospitalet de Llobregat,Albacete,EROAD,557
+Vitoria-Gasteiz,La Coruña,EROAD,610
+Vitoria-Gasteiz,Granada,EROAD,826
+Vitoria-Gasteiz,Elche,EROAD,696
+Vitoria-Gasteiz,Oviedo,EROAD,343
+Vitoria-Gasteiz,Santa Cruz de Tenerife,EROAD,2613
+Vitoria-Gasteiz,Pamplona,EROAD,109
+Vitoria-Gasteiz,Almería,EROAD,869
+Vitoria-Gasteiz,Albacete,EROAD,564
+La Coruña,Granada,EROAD,1039
+La Coruña,Elche,EROAD,1118
+La Coruña,Oviedo,EROAD,270
+La Coruña,Santa Cruz de Tenerife,EROAD,2338
+La Coruña,Pamplona,EROAD,718
+La Coruña,Almería,EROAD,1149
+La Coruña,Albacete,EROAD,952
+Granada,Elche,EROAD,366
+Granada,Oviedo,EROAD,927
+Granada,Santa Cruz de Tenerife,EROAD,1984
+Granada,Pamplona,EROAD,843
+Granada,Almería,EROAD,139
+Granada,Albacete,EROAD,329
+Elche,Oviedo,EROAD,925
+Elche,Santa Cruz de Tenerife,EROAD,2346
+Elche,Pamplona,EROAD,665
+Elche,Almería,EROAD,288
+Elche,Albacete,EROAD,166
+Oviedo,Santa Cruz de Tenerife,EROAD,2470
+Oviedo,Pamplona,EROAD,450
+Oviedo,Almería,EROAD,1014
+Oviedo,Albacete,EROAD,766
+Santa Cruz de Tenerife,Pamplona,EROAD,2684
+Santa Cruz de Tenerife,Almería,EROAD,2065
+Santa Cruz de Tenerife,Albacete,EROAD,2299
+Pamplona,Almería,EROAD,868
+Pamplona,Albacete,EROAD,552
+Almería,Albacete,EROAD,319
